@@ -48,7 +48,7 @@ Directly
    # Try it out
    manimgl
 
-If you want to hack on manimlib itself, clone this repository and in
+If you want to hack on manimx itself, clone this repository and in
 that directory execute:
 
 .. code-block:: sh
