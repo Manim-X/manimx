@@ -1,0 +1,2 @@
+graft manimx
+recursive-exclude manimx *.pyc *.DS_Store
