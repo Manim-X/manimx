@@ -4,16 +4,16 @@ CLI flags and configuration
 Command Line Interface
 ----------------------
 
-To run manim, you need to enter the directory at the same level as ``manimlib/`` 
+To run manim, you need to enter the directory at the same level as ``manimx/``
 and enter the command in the following format into terminal:
 
 .. code-block:: sh
 
-    manimgl <code>.py <Scene> <flags>
+    manimx <code>.py <Scene> <flags>
     # or
     manim-render <code>.py <Scene> <flags>
 
-- ``<code>.py`` : The python file you wrote. Needs to be at the same level as ``manimlib/``, otherwise you need to use an absolute path or a relative path.
+- ``<code>.py`` : The python file you wrote. Needs to be at the same level as ``manimx/``, otherwise you need to use an absolute path or a relative path.
 - ``<Scene>`` : The scene you want to render here. If it is not written or written incorrectly, it will list all for you to choose. And if there is only one ``Scene`` in the file, this class will be rendered directly.
 - ``<flags>`` : CLI flags.
 
@@ -36,7 +36,7 @@ All supported flags
 flag                                                       abbr   function
 ========================================================== ====== =====================================================================================================================================================================================================
 ``--help``                                                 ``-h`` Show the help message and exit
-``--version``                                              ``-v`` Display the version of manimgl
+``--version``                                              ``-v`` Display the version of manimx
 ``--write_file``                                           ``-w`` Render the scene as a movie file
 ``--skip_animations``                                      ``-s`` Skip to the last frame
 ``--low_quality``                                          ``-l`` Render at a low quality (for faster rendering)
@@ -79,7 +79,7 @@ following the directory structure:
 .. code-block:: text
 
     manim/
-    ├── manimlib/
+    ├── manimx/
     │   ├── animation/
     │   ├── ...
     │   ├── default_config.yml
@@ -89,7 +89,7 @@ following the directory structure:
     │   └── custom_config.yml
     └── custom_config.yml
 
-When you enter the ``project/`` folder and run ``manimgl code.py <Scene>``, 
+When you enter the ``project/`` folder and run ``manimx code.py <Scene>``,
 it will overwrite ``manim/default_config.yml`` with ``custom_config.yml`` 
 in the ``project`` folder.
 

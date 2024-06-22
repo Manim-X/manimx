@@ -1,7 +1,7 @@
 constants
 =========
 
-The ``constants.py`` in the ``manimlib`` folder defines the constants 
+The ``constants.py`` in the ``manimx`` folder defines the constants
 needed when running manim. Some constants are not explained here because 
 they are only used inside manim.
 

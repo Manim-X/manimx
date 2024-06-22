@@ -21,7 +21,7 @@ custom_config
         :emphasize-lines: 9, 11
 
             manim/
-            ├── manimlib/
+            ├── manimx/
             │   ├── animation/
             │   ├── ...
             │   ├── default_config.yml
@@ -40,7 +40,7 @@ custom_config
         :emphasize-lines: 8
 
             manim/
-            ├── manimlib/
+            ├── manimx/
             │   ├── animation/
             │   ├── ...
             │   ├── default_config.yml
@@ -78,7 +78,7 @@ custom_config
     is recommended)
 
 - ``template_file``
-    LaTeX template used, in ``manimlib/tex_templates``
+    LaTeX template used, in ``manimx/tex_templates``
 
 - ``intermediate_filetype``
     The type of intermediate vector file generated after compilation (``dvi`` if 

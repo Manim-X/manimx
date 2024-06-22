@@ -11,8 +11,8 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=387cc868" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=36a5483c" />
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimx_assets/custom.css" />
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimx_assets/colors.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/custom.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/colors.css" />
     
     
 
@@ -279,15 +279,15 @@
 <h1>CLI flags and configuration<a class="headerlink" href="#cli-flags-and-configuration" title="Permalink to this heading">¶</a></h1>
 <section id="command-line-interface">
 <h2>Command Line Interface<a class="headerlink" href="#command-line-interface" title="Permalink to this heading">¶</a></h2>
-<p>To run manim, you need to enter the directory at the same level as <code class="docutils literal notranslate"><span class="pre">manimlib/</span></code>
+<p>To run manim, you need to enter the directory at the same level as <code class="docutils literal notranslate"><span class="pre">manimx/</span></code>
 and enter the command in the following format into terminal:</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>manimgl<span class="w"> </span>&lt;code&gt;.py<span class="w"> </span>&lt;Scene&gt;<span class="w"> </span>&lt;flags&gt;
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>manimx<span class="w"> </span>&lt;code&gt;.py<span class="w"> </span>&lt;Scene&gt;<span class="w"> </span>&lt;flags&gt;
 <span class="c1"># or</span>
 manim-render<span class="w"> </span>&lt;code&gt;.py<span class="w"> </span>&lt;Scene&gt;<span class="w"> </span>&lt;flags&gt;
 </pre></div>
 </div>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">&lt;code&gt;.py</span></code> : The python file you wrote. Needs to be at the same level as <code class="docutils literal notranslate"><span class="pre">manimlib/</span></code>, otherwise you need to use an absolute path or a relative path.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&lt;code&gt;.py</span></code> : The python file you wrote. Needs to be at the same level as <code class="docutils literal notranslate"><span class="pre">manimx/</span></code>, otherwise you need to use an absolute path or a relative path.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">&lt;Scene&gt;</span></code> : The scene you want to render here. If it is not written or written incorrectly, it will list all for you to choose. And if there is only one <code class="docutils literal notranslate"><span class="pre">Scene</span></code> in the file, this class will be rendered directly.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">&lt;flags&gt;</span></code> : CLI flags.</p></li>
 </ul>
@@ -322,7 +322,7 @@ manim-render<span class="w"> </span>&lt;code&gt;.py<span class="w"> </span>&lt;S
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--version</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">-v</span></code></p></td>
-<td><p>Display the version of manimgl</p></td>
+<td><p>Display the version of manimx</p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--write_file</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">-w</span></code></p></td>
@@ -442,7 +442,7 @@ page <a class="reference internal" href="../documentation/custom_config.html"><s
 <p>You can also use different <code class="docutils literal notranslate"><span class="pre">custom_config.yml</span></code> for different directories, such as
 following the directory structure:</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>manim/
-├── manimlib/
+├── manimx/
 │   ├── animation/
 │   ├── ...
 │   ├── default_config.yml
@@ -453,7 +453,7 @@ following the directory structure:</p>
 └── custom_config.yml
 </pre></div>
 </div>
-<p>When you enter the <code class="docutils literal notranslate"><span class="pre">project/</span></code> folder and run <code class="docutils literal notranslate"><span class="pre">manimgl</span> <span class="pre">code.py</span> <span class="pre">&lt;Scene&gt;</span></code>,
+<p>When you enter the <code class="docutils literal notranslate"><span class="pre">project/</span></code> folder and run <code class="docutils literal notranslate"><span class="pre">manimx</span> <span class="pre">code.py</span> <span class="pre">&lt;Scene&gt;</span></code>,
 it will overwrite <code class="docutils literal notranslate"><span class="pre">manim/default_config.yml</span></code> with <code class="docutils literal notranslate"><span class="pre">custom_config.yml</span></code>
 in the <code class="docutils literal notranslate"><span class="pre">project</span></code> folder.</p>
 <p>Alternatively, you can use <code class="docutils literal notranslate"><span class="pre">--config_file</span></code> flag in CLI to specify configuration file manually.</p>

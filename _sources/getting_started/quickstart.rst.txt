@@ -11,7 +11,7 @@ directory structure:
     :emphasize-lines: 8
 
     manim/
-    ├── manimlib/
+    ├── manimx/
     │   ├── animation/
     │   ├── ...
     │   ├── default_config.yml
@@ -24,7 +24,7 @@ And paste the following code (I will explain the function of each line in detail
 .. code-block:: python
     :linenos:
 
-    from manimlib import *
+    from manimx import *
 
     class SquareToCircle(Scene):
         def construct(self):
@@ -71,7 +71,7 @@ Next, let's take a detailed look at what each row does.
 
 .. code-block:: python
     
-    from manimlib import *
+    from manimx import *
     
 This will import all the classes that may be used when using manim.
 
@@ -129,7 +129,7 @@ Let's change some codes and add some animations to make videos instead of just p
 .. code-block:: python
     :linenos:
 
-    from manimlib import *
+    from manimx import *
 
     class SquareToCircle(Scene):
         def construct(self):

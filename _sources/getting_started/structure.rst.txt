@@ -12,7 +12,7 @@ Below is the directory structure of manim:
 
 .. code-block:: text
 
-    manimlib/ # manim library
+    manimx/ # manim library
     ├── __init__.py          
     ├── __main__.py          
     ├── default_config.yml   # Default configuration file

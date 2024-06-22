@@ -11,7 +11,7 @@ InteractiveDevlopment
 .. manim-example:: InteractiveDevelopment
     :media: https://cdn.jsdelivr.net/gh/manim-kindergarten/CDN@master/manimgl_assets/example_scenes/InteractiveDevelopment.mp4
 
-    from manimlib import *
+    from manimx import *
 
     class InteractiveDevelopment(Scene):
         def construct(self):
